@@ -159,18 +159,8 @@ body {
 .btn-animated {
   animation: moveInBottom .5s ease-out .75s;
   /*
-  backwards: the animation will apply the values defined in the first relevant keyframe as soon as it is applied to the target
-  with moveInBottom animation
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-
+    https://www.youtube.com/watch?v=Yt2M9PEHUvg
+    okay, it's just a property. please review the video above, girl.
   */
-  /* animation-fill-mode: backwards; */
+  animation-fill-mode: backwards;
 }
