@@ -1,7 +1,7 @@
 # advanced-css-sass
 notes for this course https://www.udemy.com/course/advanced-css-and-sass/learn/lecture
 
-## ``transform`` properties
+## ``transform``
  
 - center element:
 ```css
@@ -20,5 +20,39 @@ notes for this course https://www.udemy.com/course/advanced-css-and-sass/learn/l
 e.g. [Stackoverflow: transform-not-working-on-css-hover-element](https://stackoverflow.com/questions/48172124/transform-not-working-on-css-hover-element)
 
 
+## ``@keyframes``
 
+```css
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
 
+  to {
+    transform: translateX(100%);
+  }
+}
+
+from
+A starting offset of 0%.
+
+to
+An ending offset of 100%.
+```
+
+e.g.
+```css
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+```
